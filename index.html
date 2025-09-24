@@ -1,33 +1,86 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en">
 
 <head>
-    <title>Bootstrap</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <title>Bootstrap</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css" />
+  <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
 </head>
 
 <body class="bg-secondary">
-    <div class="bg-dark">
 
-        <div class="container">
-            <div class="row col-12 text-white h1">
-                <img src="assets/michael_jackson.jpg" alt="Texte alternatif" class="img-fluid">
-                <div class="d-flex justify-content-center ">
-                    The King of pop: Micheal Jackson
-                </div>
-            </div>
-        </div>
-    </div>
+  <!-- Bootstrap Bundle avec Popper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
+
+
+  <div class="bg-dark">
     <div class="container">
-        <div class="row text-white">
-            <div class="d-flex align-items-center">
-                <h1>Biographie</h1>
-            </div>
+      <div class="row col-12 text-white h1">
+        <img src="assets/michael_jackson.jpg" alt="Texte alternatif" class="img-fluid" />
+        <div class="d-flex justify-content-center">
+          The King of pop: Micheal Jackson
         </div>
+      </div>
     </div>
- 
+  </div>
+
+  <div class="container text-white display-6  h5 col-9">
+    <div class="row d-flex align-items-center"></div>
+    <div class="display-5 d-flex justify-content-center my-5">Biographie</div>
+    Michael Joseph Jackson was born in Gary, Indiana, on August 29, 1958. He was the eighth of ten
+    children in the Jackson family, a working-class African-American family living in a two-bedroom house on Jackson
+    Street.His mother, Katherine Jackson (née Scruse), played clarinet, cello, and piano, had aspired to be a
+    country-and-western performer, and worked part-time at Sears She was a Jehovah's Witness.His father, Joe
+    Jackson, was a former boxer, crane operator at US Steel, and guitarist for local rhythm and blues band the
+    Falcons.Joe's great-grandfather, July "Jack" Gale, was a US Army scout; family lore held that he was also
+    a Native American medicine man. Michael grew up with three sisters (Rebbie, La Toya, and Janet) and five
+    brothers (Jackie, Tito, Jermaine, Marlon, and Randy). A sixth brother, Marlon's twin Brandon, died shortly
+    after his birth.
+  </div>
+
+  <div class="bg-dark">
+    <div class="container d-md-none">
+      <div id="mjcarousel" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#mjcarousel" data-bs-slide-to="0" class="active" aria-current="true"
+            aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#mjcarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#mjcarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" id="slide-mj">
+            <img src="assets/family_grey.jpg" class="d-block w-100 " alt="...">
+          </div>
+
+          <div class="carousel-item" id="slide-mj2">
+            <img src="assets/young_mj.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" id="slide-mj3">
+            <img src="assets/jackson_five.jpg" class="d-block w-100" alt="...">
+          </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#mjcarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#mjcarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="slide-mj"></div>
+
 </body>
 
 </html>
