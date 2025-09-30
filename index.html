@@ -66,169 +66,161 @@
           </p>
         </div>
         <div class="col">
-          <img src="assets/bio_photo.jpg" alt="">
+          <img src="assets/bio_photo.jpg" alt="" />
         </div>
 
-        <!-- Carousel avec fond noir pleine largeur -->
-        <div class="bg-dark text-white py-5">
-          <!-- Pas de container ici, pour permettre au fond de s'étendre à 100% -->
-
-          <div class="container">
-            <div id="mjcarousel" class="carousel slide">
-              <div class="carousel-indicators">
-                <button
-                  type="button"
-                  data-bs-target="#mjcarousel"
-                  data-bs-slide-to="0"
-                  class="active"
-                  aria-current="true"
-                  aria-label="Slide 1"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#mjcarousel"
-                  data-bs-slide-to="1"
-                  aria-label="Slide 2"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#mjcarousel"
-                  data-bs-slide-to="2"
-                  aria-label="Slide 3"
-                ></button>
-              </div>
-
-              <div class="carousel-inner">
-                <div class="carousel-item active" id="slide-mj">
-                  <img
-                    src="assets/family_grey.jpg"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-
-                <div class="carousel-item" id="slide-mj2">
-                  <img
-                    src="assets/young_mj.png"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-
-                <div class="carousel-item" id="slide-mj3">
-                  <img
-                    src="assets/jackson_five.jpg"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-              </div>
-
-              <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#mjcarousel"
-                data-bs-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#mjcarousel"
-                data-bs-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="container text-white">
-          <div class="row">
-            <div class="col">
-              <h2 class="d-flex justify-content-center my-5">
-                Analyse critique
-              </h2>
-              <p class="lead">
-                Michael Jackson est incontestablement une icône mondiale.
-                Cependant, son héritage est complexe. Derrière les performances
-                légendaires et les records de ventes se cachent des controverses
-                majeures, notamment liées à sa vie privée, à ses choix
-                esthétiques, et à certaines accusations qui ont terni son image
-                publique.
-              </p>
-              <p>
-                Cette dualité – entre admiration artistique et interrogation
-                morale – soulève une question centrale : peut-on séparer
-                l'artiste de l'homme ? La réponse varie selon les sensibilités
-                et les générations.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="container">
+        <div class="container text-white bg-dark px-5 ">
           <div class="bg-dark">
-            <h4>Sources</h4>
-            <div class="container">
-              <div class="row g-3 text-center">
-                <div class="col-md-4">
-                  <div class="card">
-                    <div class="card-body">
-                      <i
-                        class="bi bi-chat-square-quote text-primary display-3"
-                      ></i>
-                      <blockquote class="">
-                        <p class="lead">Rolling Stone - Micheal Jakcson</p>
-                        <a
-                          href="https://www.rollingstone.com/music/music-lists/best-michael-jackson-songs-126462/"
-                          class="text-info"
-                          >Rolling Stone - Michael Jackson</a
-                        >
-                      </blockquote>
-                    </div>
+            <h3 class="d-flex justify-content-center my-3"> Ces plus gros hit</h3>
+            <div class="row">
+              <div id="mjcarousel" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#mjcarousel"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#mjcarousel"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#mjcarousel"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                </div>
+
+                <div class="carousel-inner">
+                  <div class="carousel-item active" id="slide-mj">
+                    <img
+                      src="assets/family_grey.jpg"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+
+                  <div class="carousel-item" id="slide-mj2">
+                    <img
+                      src="assets/young_mj.png"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+
+                  <div class="carousel-item" id="slide-mj3">
+                    <img
+                      src="assets/jackson_five.jpg"
+                      class="d-block w-100"
+                      alt="..."
+                    />
                   </div>
                 </div>
-                <div class="col-md-4">
-                  <div class="card">
-                    <div class="card-body">
-                      <i
-                        class="bi bi-chat-square-quote display-3 text-danger"
-                      ></i>
-                      <blockquote class="">
-                        <p class="lead">Biographie</p>
-                        <a
-                          href="https://www.biography.com/musicians/michael-jackson"
-                          class="text-info"
-                          >Biography.com</a
-                        >
-                      </blockquote>
-                    </div>
-                  </div>
+
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#mjcarousel"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#mjcarousel"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container text-white">
+      <div class="row">
+        <div class="col">
+          <h2 class="d-flex justify-content-center my-5">Analyse critique</h2>
+          <p class="lead">
+            Michael Jackson est incontestablement une icône mondiale. Cependant,
+            son héritage est complexe. Derrière les performances légendaires et
+            les records de ventes se cachent des controverses majeures,
+            notamment liées à sa vie privée, à ses choix esthétiques, et à
+            certaines accusations qui ont terni son image publique.
+          </p>
+          <p class="lead">
+            Cette dualité – entre admiration artistique et interrogation morale
+            – soulève une question centrale : peut-on séparer l'artiste de
+            l'homme ? La réponse varie selon les sensibilités et les
+            générations.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container ">
+      <div class="bg-dark text-white">
+        <h3 class="d-flex justify-content-center my-3"> Sources</h3>
+        <div class="container">
+          <div class="row g-3 text-center">
+            <div class="col-md-4">
+              <div class="card">
+                <div class="card-body">
+                  <i class="bi bi-chat-square-quote text-primary display-3"></i>
+                  <blockquote class="">
+                    <p class="lead">Rolling Stone - Micheal Jakcson</p>
+                    <a
+                      href="https://www.rollingstone.com/music/music-lists/best-michael-jackson-songs-126462/"
+                      class="text-info"
+                      >Rolling Stone - Michael Jackson</a
+                    >
+                  </blockquote>
                 </div>
-                <div class="col-md-4">
-                  <div class="card">
-                    <div class="card-body">
-                      <i
-                        class="bi bi-chat-square-quote display-3 text-success"
-                      ></i>
-                      <blockquote class="">
-                        <p class="lead">The Guardian: Michael</p>
-                        <a
-                          href="https://www.theguardian.com/music/michaeljackson"
-                          class="text-info"
-                          >The Guardian: Michael</a
-                        >
-                      </blockquote>
-                    </div>
-                  </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <div class="card-body">
+                  <i class="bi bi-chat-square-quote display-3 text-danger"></i>
+                  <blockquote class="">
+                    <p class="lead">Biographie</p>
+                    <a
+                      href="https://www.biography.com/musicians/michael-jackson"
+                      class="text-info"
+                      >Biography.com</a
+                    >
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <div class="card-body">
+                  <i class="bi bi-chat-square-quote display-3 text-success"></i>
+                  <blockquote class="">
+                    <p class="lead">The Guardian: Michael</p>
+                    <a
+                      href="https://www.theguardian.com/music/michaeljackson"
+                      class="text-info"
+                      >The Guardian: Michael</a
+                    >
+                  </blockquote>
                 </div>
               </div>
             </div>
