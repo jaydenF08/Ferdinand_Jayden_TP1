@@ -1,232 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Bootstrap</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-    />
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
+<head>
+  <title>Bootstrap</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
 
-    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css" />
-    <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
-  </head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
 
-  <body class="bg-secondary">
-    <!-- Bootstrap Bundle avec Popper.js -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css" />
+  <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
+</head>
 
-    <header class="bg-dark text-white py-5">
-      <div class="container text-center">
-        <h1 class="display-4">
-          Michael Jackson : Génie musical ou figure controversée ?
-        </h1>
-        <p class="lead">Un regard critique sur l'héritage du roi de la pop</p>
+<body class="bg-secondary">
+  <!-- Bootstrap Bundle avec Popper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <header class="bg-dark text-white py-5">
+    <div class="container text-center">
+      <h1 class="display-4">
+        Michael Jackson : Génie musical ou figure controversée ?
+      </h1>
+      <p class="lead">Un regard critique sur l'héritage du roi de la pop</p>
+    </div>
+  </header>
+
+  <div class="bg-dark">
+    <div class="container">
+      <div class="row col-12 text-white h1">
+        <img src="assets/michael_jackson.jpg" alt="Texte alternatif" class="img-fluid" />
+        <div class="d-flex justify-content-center"></div>
       </div>
-    </header>
+    </div>
+  </div>
 
-    <div class="bg-dark">
+  <div class="container text-white">
+    <div class="row">
+      <div class="col">
+        <h2 class="d-flex justify-content-center my-5">Biographie</h2>
+        <p class="lead">
+          Michael Joseph Jackson, né le 29 août 1958, est le huitième des dix
+          enfants de Joseph Walter Jackson et Katherine Esther Jackson (née
+          Scruse). La famille vit dans une petite maison pourvue de deux
+          chambres seulement, dans la ville ouvrière de Gary, située dans
+          l'Indiana, au sud-est de Chicago. Son père, ancien boxeur et grutier
+          de l'entreprise U.S. Steel, joue de la guitare dans un groupe rhythm
+          and blues appelé « The Falcons » (en français : les Faucons) pour
+          compléter les revenus de la famille. Sa mère, qui élève ses enfants
+          et travaille à temps partiel chez Sears, une chaîne américaine de
+          grands magasins pour rapporter un complément de revenus au foyer,
+          jouait de la clarinette et du piano dans le but de devenir une
+          artiste de country. Contre la volonté de son mari, elle élève ses
+          enfants dans la religion des témoins de Jéhovah. Michael Jackson
+          finira par quitter ce mouvement en 1987.
+        </p>
+      </div>
+      <div class="col">
+        <img src="assets/bio_photo.jpg" alt="" />
+      </div>
+
+      <div class="container text-white bg-dark px-5 py-3">
+        <div class="bg-dark">
+          <h3 class="d-flex justify-content-center">Ces plus gros hit</h3>
+          <div class="row">
+            <div id="mjcarousel" class="carousel slide">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#mjcarousel" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#mjcarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#mjcarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+
+              <div class="carousel-inner">
+                <div class="carousel-item active" id="slide-mj">
+                  <div class="d-flex justify-content-center my-3">
+                    <button type="button" class="btn btn-warning" data-bs-toggle="modal"
+                      data-bs-target="#mjThrillerModal">
+                     1. Thriller 🎶
+                    </button>
+                  </div>
+                  
+         
+
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="mjThrillerModal" tabindex="-1" aria-labelledby="mjThrillerModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <!-- Entête -->
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="mjThrillerModalLabel">🎤 À propos de Thriller</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+                        </div>
+                        <!-- Corps -->
+                        <div class="modal-body">
+                          Thriller est l'album le plus vendu de tous les temps, marquant à jamais l'histoire de la
+                          musique pop.
+                        </div>
+                        <!-- Pied -->
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Fermer</button>
+                          <button type="button" class="btn btn-warning">Voir le clip</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <img src="assets/mj.jpg" class="d-block w-100" alt="..." />
+                </div>
+
+                <div class="carousel-item" id="slide-mj2">
+                  <img src="assets/bad.jpg" class="d-block w-100" alt="..." />
+                </div>
+
+                <div class="carousel-item" id="slide-mj3">
+                  <img src="assets/dangerous.jpg" class="d-block w-100" alt="..." />
+                </div>
+              </div>
+
+              <button class="carousel-control-prev" type="button" data-bs-target="#mjcarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#mjcarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <!-- Entête -->
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Titre du Modal</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <!-- Corps -->
+        <div class="modal-body">Message super important</div>
+        <!-- Pied -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            Fermer
+          </button>
+          <button type="button" class="btn btn-primary">Ok merci</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container text-white">
+    <div class="row">
+      <div class="col">
+        <h2 class="d-flex justify-content-center my-5">Analyse critique</h2>
+        <p class="lead">
+          Michael Jackson est incontestablement une icône mondiale. Cependant,
+          son héritage est complexe. Derrière les performances légendaires et
+          les records de ventes se cachent des controverses majeures,
+          notamment liées à sa vie privée, à ses choix esthétiques, et à
+          certaines accusations qui ont terni son image publique.
+        </p>
+        <p class="lead">
+          Cette dualité – entre admiration artistique et interrogation morale
+          – soulève une question centrale : peut-on séparer l'artiste de
+          l'homme ? La réponse varie selon les sensibilités et les
+          générations.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="bg-dark text-white">
+      <h3 class="d-flex justify-content-center my-3">Sources</h3>
       <div class="container">
-        <div class="row col-12 text-white h1">
-          <img
-            src="assets/michael_jackson.jpg"
-            alt="Texte alternatif"
-            class="img-fluid"
-          />
-          <div class="d-flex justify-content-center"></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container text-white">
-      <div class="row">
-        <div class="col">
-          <h2 class="d-flex justify-content-center my-5">Biographie</h2>
-          <p class="lead">
-            Michael Joseph Jackson, né le 29 août 1958, est le huitième des dix
-            enfants de Joseph Walter Jackson et Katherine Esther Jackson (née
-            Scruse). La famille vit dans une petite maison pourvue de deux
-            chambres seulement, dans la ville ouvrière de Gary, située dans
-            l'Indiana, au sud-est de Chicago. Son père, ancien boxeur et grutier
-            de l'entreprise U.S. Steel, joue de la guitare dans un groupe rhythm
-            and blues appelé « The Falcons » (en français : les Faucons) pour
-            compléter les revenus de la famille. Sa mère, qui élève ses enfants
-            et travaille à temps partiel chez Sears, une chaîne américaine de
-            grands magasins pour rapporter un complément de revenus au foyer,
-            jouait de la clarinette et du piano dans le but de devenir une
-            artiste de country. Contre la volonté de son mari, elle élève ses
-            enfants dans la religion des témoins de Jéhovah. Michael Jackson
-            finira par quitter ce mouvement en 1987.
-          </p>
-        </div>
-        <div class="col">
-          <img src="assets/bio_photo.jpg" alt="" />
-        </div>
-
-        <div class="container text-white bg-dark px-5 ">
-          <div class="bg-dark">
-            <h3 class="d-flex justify-content-center my-3"> Ces plus gros hit</h3>
-            <div class="row">
-              <div id="mjcarousel" class="carousel slide">
-                <div class="carousel-indicators">
-                  <button
-                    type="button"
-                    data-bs-target="#mjcarousel"
-                    data-bs-slide-to="0"
-                    class="active"
-                    aria-current="true"
-                    aria-label="Slide 1"
-                  ></button>
-                  <button
-                    type="button"
-                    data-bs-target="#mjcarousel"
-                    data-bs-slide-to="1"
-                    aria-label="Slide 2"
-                  ></button>
-                  <button
-                    type="button"
-                    data-bs-target="#mjcarousel"
-                    data-bs-slide-to="2"
-                    aria-label="Slide 3"
-                  ></button>
-                </div>
-
-                <div class="carousel-inner">
-                  <div class="carousel-item active" id="slide-mj">
-                    <img
-                      src="assets/family_grey.jpg"
-                      class="d-block w-100"
-                      alt="..."
-                    />
-                  </div>
-
-                  <div class="carousel-item" id="slide-mj2">
-                    <img
-                      src="assets/young_mj.png"
-                      class="d-block w-100"
-                      alt="..."
-                    />
-                  </div>
-
-                  <div class="carousel-item" id="slide-mj3">
-                    <img
-                      src="assets/jackson_five.jpg"
-                      class="d-block w-100"
-                      alt="..."
-                    />
-                  </div>
-                </div>
-
-                <button
-                  class="carousel-control-prev"
-                  type="button"
-                  data-bs-target="#mjcarousel"
-                  data-bs-slide="prev"
-                >
-                  <span
-                    class="carousel-control-prev-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button
-                  class="carousel-control-next"
-                  type="button"
-                  data-bs-target="#mjcarousel"
-                  data-bs-slide="next"
-                >
-                  <span
-                    class="carousel-control-next-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
+        <div class="row g-3 text-center">
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <i class="bi bi-chat-square-quote text-primary display-3"></i>
+                <blockquote class="">
+                  <p class="lead">Rolling Stone - Micheal Jakcson</p>
+                  <a href="https://www.rollingstone.com/music/music-lists/best-michael-jackson-songs-126462/"
+                    class="text-info">Rolling Stone - Michael Jackson</a>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <i class="bi bi-chat-square-quote display-3 text-danger"></i>
+                <blockquote class="">
+                  <p class="lead">Biographie</p>
+                  <a href="https://www.biography.com/musicians/michael-jackson" class="text-info">Biography.com</a>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <i class="bi bi-chat-square-quote display-3 text-success"></i>
+                <blockquote class="">
+                  <p class="lead">The Guardian: Michael</p>
+                  <a href="https://www.theguardian.com/music/michaeljackson" class="text-info">The Guardian: Michael</a>
+                </blockquote>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
+</body>
 
-    <div class="container text-white">
-      <div class="row">
-        <div class="col">
-          <h2 class="d-flex justify-content-center my-5">Analyse critique</h2>
-          <p class="lead">
-            Michael Jackson est incontestablement une icône mondiale. Cependant,
-            son héritage est complexe. Derrière les performances légendaires et
-            les records de ventes se cachent des controverses majeures,
-            notamment liées à sa vie privée, à ses choix esthétiques, et à
-            certaines accusations qui ont terni son image publique.
-          </p>
-          <p class="lead">
-            Cette dualité – entre admiration artistique et interrogation morale
-            – soulève une question centrale : peut-on séparer l'artiste de
-            l'homme ? La réponse varie selon les sensibilités et les
-            générations.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="container ">
-      <div class="bg-dark text-white">
-        <h3 class="d-flex justify-content-center my-3"> Sources</h3>
-        <div class="container">
-          <div class="row g-3 text-center">
-            <div class="col-md-4">
-              <div class="card">
-                <div class="card-body">
-                  <i class="bi bi-chat-square-quote text-primary display-3"></i>
-                  <blockquote class="">
-                    <p class="lead">Rolling Stone - Micheal Jakcson</p>
-                    <a
-                      href="https://www.rollingstone.com/music/music-lists/best-michael-jackson-songs-126462/"
-                      class="text-info"
-                      >Rolling Stone - Michael Jackson</a
-                    >
-                  </blockquote>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card">
-                <div class="card-body">
-                  <i class="bi bi-chat-square-quote display-3 text-danger"></i>
-                  <blockquote class="">
-                    <p class="lead">Biographie</p>
-                    <a
-                      href="https://www.biography.com/musicians/michael-jackson"
-                      class="text-info"
-                      >Biography.com</a
-                    >
-                  </blockquote>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card">
-                <div class="card-body">
-                  <i class="bi bi-chat-square-quote display-3 text-success"></i>
-                  <blockquote class="">
-                    <p class="lead">The Guardian: Michael</p>
-                    <a
-                      href="https://www.theguardian.com/music/michaeljackson"
-                      class="text-info"
-                      >The Guardian: Michael</a
-                    >
-                  </blockquote>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </body>
 </html>
