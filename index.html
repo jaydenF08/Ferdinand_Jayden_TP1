@@ -47,7 +47,7 @@
     <div class="container text-white">
       <div class="row">
         <div class="col">
-          <h2 class=" d-flex justify-content-center my-5">Biographie</h2>
+          <h2 class="d-flex justify-content-center my-5">Biographie</h2>
           <p class="lead">
             Michael Joseph Jackson, né le 29 août 1958, est le huitième des dix
             enfants de Joseph Walter Jackson et Katherine Esther Jackson (née
@@ -66,6 +66,115 @@
           </p>
         </div>
         <div class="col">
+          <img src="assets/bio_photo.jpg" alt="">
+        </div>
+
+        <!-- Carousel avec fond noir pleine largeur -->
+        <div class="bg-dark text-white py-5">
+          <!-- Pas de container ici, pour permettre au fond de s'étendre à 100% -->
+
+          <div class="container">
+            <div id="mjcarousel" class="carousel slide">
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#mjcarousel"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#mjcarousel"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#mjcarousel"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+
+              <div class="carousel-inner">
+                <div class="carousel-item active" id="slide-mj">
+                  <img
+                    src="assets/family_grey.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+
+                <div class="carousel-item" id="slide-mj2">
+                  <img
+                    src="assets/young_mj.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+
+                <div class="carousel-item" id="slide-mj3">
+                  <img
+                    src="assets/jackson_five.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#mjcarousel"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#mjcarousel"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="container text-white">
+          <div class="row">
+            <div class="col">
+              <h2 class="d-flex justify-content-center my-5">
+                Analyse critique
+              </h2>
+              <p class="lead">
+                Michael Jackson est incontestablement une icône mondiale.
+                Cependant, son héritage est complexe. Derrière les performances
+                légendaires et les records de ventes se cachent des controverses
+                majeures, notamment liées à sa vie privée, à ses choix
+                esthétiques, et à certaines accusations qui ont terni son image
+                publique.
+              </p>
+              <p>
+                Cette dualité – entre admiration artistique et interrogation
+                morale – soulève une question centrale : peut-on séparer
+                l'artiste de l'homme ? La réponse varie selon les sensibilités
+                et les générations.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="container">
           <div class="bg-dark">
             <h4>Sources</h4>
             <div class="container">
@@ -125,106 +234,6 @@
             </div>
           </div>
         </div>
-      </div>
- 
-
-      <!-- Carousel avec fond noir pleine largeur -->
-      <div class="bg-dark text-white py-5">
-        <!-- Pas de container ici, pour permettre au fond de s'étendre à 100% -->
-
-        <div class="container">
-          <div id="mjcarousel" class="carousel slide">
-            <div class="carousel-indicators">
-              <button
-                type="button"
-                data-bs-target="#mjcarousel"
-                data-bs-slide-to="0"
-                class="active"
-                aria-current="true"
-                aria-label="Slide 1"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#mjcarousel"
-                data-bs-slide-to="1"
-                aria-label="Slide 2"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#mjcarousel"
-                data-bs-slide-to="2"
-                aria-label="Slide 3"
-              ></button>
-            </div>
-
-            <div class="carousel-inner">
-              <div class="carousel-item active" id="slide-mj">
-                <img
-                  src="assets/family_grey.jpg"
-                  class="d-block w-100"
-                  alt="..."
-                />
-              </div>
-
-              <div class="carousel-item" id="slide-mj2">
-                <img
-                  src="assets/young_mj.png"
-                  class="d-block w-100"
-                  alt="..."
-                />
-              </div>
-
-              <div class="carousel-item" id="slide-mj3">
-                <img
-                  src="assets/jackson_five.jpg"
-                  class="d-block w-100"
-                  alt="..."
-                />
-              </div>
-            </div>
-
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#mjcarousel"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#mjcarousel"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <div class="container text-white my-5">
-        <h2 class="text-center">Analyse critique</h2>
-        <p>
-          Michael Jackson est incontestablement une icône mondiale. Cependant,
-          son héritage est complexe. Derrière les performances légendaires et
-          les records de ventes se cachent des controverses majeures, notamment
-          liées à sa vie privée, à ses choix esthétiques, et à certaines
-          accusations qui ont terni son image publique.
-        </p>
-        <p>
-          Cette dualité – entre admiration artistique et interrogation morale –
-          soulève une question centrale : peut-on séparer l'artiste de l'homme ?
-          La réponse varie selon les sensibilités et les générations.
-        </p>
       </div>
     </div>
   </body>
